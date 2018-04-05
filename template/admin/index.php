@@ -82,32 +82,7 @@
 			<?php $menu=admin_menu::allmenu(); $i=0; $class1 = '';?>
 			{if $menu}
 			{loop $menu $ns $ms}
-			<?php
-			if($ns == '设置' && !chkpower('config')){
-				continue;
-			}
-			if($ns == '内容' && !chkpower('content')){
-				continue;
-			}
-			if($ns == '用户' && !chkpower('user')){
-				continue;
-			}
-			if($ns == '订单' && !chkpower('order')){
-				continue;
-			}
-			if($ns == '功能' && !chkpower('func')){
-				continue;
-			}
-			if($ns == '模板' && !chkpower('template')){
-				continue;
-			}
-			if($ns == '营销' && !chkpower('seo')){
-				continue;
-			}
-			if($ns == '自定义' && !chkpower('defined')){
-				continue;
-			}
-			?>
+			
                         <li><a class="active-menu waves-effect waves-dark" href="#">
 {if $i==1}<span class="glyphicon glyphicon-list-alt"></span> 
 			{elseif $i==2}<span class="glyphicon glyphicon-user"></span> 
