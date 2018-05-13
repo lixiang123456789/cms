@@ -11,7 +11,7 @@
 	<script src="{$base_url}/js/jquery-browser.js"></script>
   </head>
 <body>
-
+    
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
 	  <div class="row">
@@ -75,336 +75,362 @@
 
     <div class="container-fluid">
       <div class="row">
-  <!-- 左侧 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-        <div id="sidebar" class="sidebar navbar-side">
-         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <!-- 左侧 -->
+    <div id="sidebar" class="sidebar navbar-side">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 			<ul class="nav" id="main-menu">
 				<li>
 					<a class="active-menu waves-effect waves-dark" href="#">
 						<span class="glyphicon glyphicon-cog"></span> 
-					设置
+				    网站设置 
 					</a>
 	                <ul class="nav nav_0 nav-second-level">
 						<li>
-							<a href="/index.php?case=config&act=system&set=site&admin_dir=admin&site=default">
+							<a href="{$base_url}/index.php?case=config&act=system&set=site&admin_dir=admin&site=default">
 							网站配置
 							</a>
 						</li>
 		                <li>
-			                <a href="/index.php?case=config&act=system&set=image&admin_dir=admin&site=default">水印设置
+			                <a href="{$base_url}/index.php?case=config&act=system&set=image&admin_dir=admin&site=default">水印设置
 			                </a>
 		                </li>
 		                <li>
-			                <a href="/index.php?case=config&act=system&set=upload&admin_dir=admin&site=default">
+			                <a href="{$base_url}/index.php?case=config&act=system&set=upload&admin_dir=admin&site=default">
 			                附件设置
 			                </a>
 		                </li>
+		                <li>
+		                <a href="{$base_url}/index.php?case=config&act=system&set=ditu&admin_dir=admin&site=default">
+		                地图设置
+		                </a>
+		                </li>
+
 		               	<li>
-			               	<a href="/index.php?case=config&act=system&set=security&admin_dir=admin&site=default">
+			               	<a href="{$base_url}/index.php?case=config&act=system&set=security&admin_dir=admin&site=default">
 			               	字符过滤
 			               	</a>
 		               	</li>
 		                <li>
-		                <a href="/index.php?case=config&act=system&set=mail&admin_dir=admin&site=default">
+		                <a href="{$base_url}/index.php?case=config&act=system&set=mail&admin_dir=admin&site=default">
 		                邮件发送
 		                </a>
 		                </li>
 		                <li>
-		                <a href="/index.php?case=config&act=hottag&admin_dir=admin&site=default">热门标签
+		                <a href="{$base_url}/index.php?case=config&act=hottag&admin_dir=admin&site=default">热门标签
 		                </a>
 		                </li>
 		                <li>
-		                <a href="/index.php?case=language&act=edit&admin_dir=admin&site=default">语言包编辑
+		                <a href="{$base_url}/index.php?case=language&act=edit&admin_dir=admin&site=default">语言包编辑
 		                </a>
 		                </li>
 		                <li>
-		                <a href="/index.php?case=config&act=system&set=sms&admin_dir=admin&site=default">
+		                <a href="{$base_url}/index.php?case=config&act=system&set=sms&admin_dir=admin&site=default">
 		                短信设置
 		                </a>
 		                </li>
+		                
 		                <li>
-		                <a href="/index.php?case=config&act=system&set=ditu&admin_dir=admin&site=default">
-		                地图设置
-		                </a>
-		                </li>
-		                <li>
-		                <a href="/index.php?case=website&act=listwebsite&admin_dir=admin&site=default">站点列表
+		                <a href="{$base_url}/index.php?case=website&act=listwebsite&admin_dir=admin&site=default">站点列表
 		                </a>
 		                </li>
 		            </ul>
 	            </li>
+	            <li>
+					<a class="active-menu waves-effect waves-dark" href="#">
+						<span class="glyphicon glyphicon-cog"></span> 
+					用户管理 
+					</a>
+	                <ul class="nav nav_11 nav-second-level">
+						<li>
+		                    <a href="{$base_url}/index.php?case=table&act=list&table=user&admin_dir=admin&site=default">
+		                    用户管理
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="{$base_url}/index.php?case=table&act=list&table=usergroup&admin_dir=admin&site=default">
+		                    用户组管理
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="{$base_url}/index.php?case=ologin&act=list&table=ologin&admin_dir=admin&site=default">
+		                    登录扩展
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="{$base_url}/index.php?case=invite&act=list&admin_dir=admin&site=default">邀请码
+		                    </a>
+		                </li>
+		            </ul>
+	            </li>
+	            <li>
+					<a class="active-menu waves-effect waves-dark" href="#">
+						<span class="glyphicon glyphicon-th-list"></span> 
+					网站首页 
+					</a>
+	                <ul class="nav nav_11 nav-second-level">
+						<li>
+				        	<a href="{$base_url}/index.php?case=config&act=system&set=slide&admin_dir=admin&site=default">幻灯片
+				        	</a>
+				        </li>
+				        <li>
+				            <a href="{$base_url}/index.php?case=table&act=list&table=announcement&admin_dir=admin&site=default">
+				            公告发布
+				            </a>
+			            </li>
+		            </ul>
+	            </li>
 				<li>
 					<a class="active-menu waves-effect waves-dark" href="#">
-						<span class="glyphicon glyphicon-list-alt"></span> 
+						<span class="glyphicon glyphicon-th-list"></span> 
  					关于我们
  					</a>
                     <ul class="nav nav_1 nav-second-level">
                         <li>
-	                        <a href="/index.php?case=table&act=list&table=category&admin_dir=admin&site=default">
+				           <a href="{$base_url}/index.php?case=table&act=list&table=archive&admin_dir=admin&site=default">
+	                        内容管理
+	                        </a>
+			            </li>
+                    </ul>
+                </li>
+				<li>
+					<a class="active-menu waves-effect waves-dark" href="#">
+						<span class="glyphicon glyphicon-th-list"></span> 
+					企业新闻
+					</a>
+		            <ul class="nav nav_2 nav-second-level">
+		                <li>
+				           <a href="{$base_url}/index.php?case=table&act=list&table=archive&admin_dir=admin&site=default">
+	                        内容管理
+	                        </a>
+			            </li>
+		            </ul>
+	            </li>
+				<li>
+					<a class="active-menu waves-effect waves-dark" href="#">
+						<span class="glyphicon glyphicon-th-list"></span> 
+					产品中心
+					</a>
+		            <ul class="nav nav_3 nav-second-level">
+		                <li>
+				           <a href="{$base_url}/index.php?case=table&act=list&table=archive&admin_dir=admin&site=default">
+	                        内容管理
+	                        </a>
+			            </li>
+		            </ul>
+		       	</li>
+			    <li>
+					<a class="active-menu waves-effect waves-dark" href="#">
+						<span class="glyphicon glyphicon-th-list"></span> 
+					联系我们
+					</a>
+			        <ul class="nav nav_8 nav-second-level">
+			            <li>
+				           <a href="{$base_url}/index.php?case=table&act=list&table=archive&admin_dir=admin&site=default">
+	                        内容管理
+	                        </a>
+			            </li>
+			        </ul>
+		    	</li>
+		    	<li>
+					<a class="active-menu waves-effect waves-dark" href="#">
+						<span class="glyphicon glyphicon-th-list"></span> 
+					案例展示
+					</a>
+			        <ul class="nav nav_9 nav-second-level">
+			            <li>
+				            <a href="{$base_url}/index.php?case=table&act=list&table=archive&admin_dir=admin&site=default">
+	                        内容管理
+	                        </a>
+			            </li>
+			        </ul>
+		    	</li>
+
+		    	<li>
+					<a class="active-menu waves-effect waves-dark" href="#">
+						<span class="glyphicon glyphicon-cog"></span> 
+					其他
+					</a>
+			        <ul class="nav nav_10 nav-second-level">
+			            <li>
+			                <a href="{$base_url}/index.php?case=table&act=list&table=orders&admin_dir=admin&site=default">
+			                订单列表
+			                </a>
+		                </li>
+		                <li>
+			                <a href="{$base_url}/index.php?case=pay&act=list&table=pay&admin_dir=admin&site=default">支付配置
+			                </a>
+		                </li>
+		                <li>
+			                <a href="{$base_url}/index.php?case=logistics&act=list&table=logistics&admin_dir=admin&site=default">
+			                配货配置
+			                </a>
+		                </li>
+                        <li>
+				            <a href="{$base_url}/index.php?case=weixin&act=list&admin_dir=admin&site=default">公众号管理
+				            </a>
+			            </li>
+			            <li>
+				            <a href="{$base_url}/index.php?case=stats&act=list&table=stats&admin_dir=admin&site=default">
+				            蜘蛛统计
+				            </a>
+			            </li>
+			            <li>
+				            <a href="{$base_url}/index.php?case=table&act=list&table=linkword&admin_dir=admin&site=default">
+				            内链管理
+				            </a>
+			            </li>
+			            <li>
+				            <a href="{$base_url}/index.php?case=table&act=list&table=friendlink&admin_dir=admin&site=default">
+				            友链管理
+				            </a>
+			            </li>
+			            <li>
+				            <a href="{$base_url}/index.php?case=table&act=send&table=user&admin_dir=admin&site=default">发送邮件
+				            </a>
+			            </li>
+			            <li>
+					        <a href="{$base_url}/index.php?case=config&act=system&set=template&admin_dir=admin&site=default">选择模板
+					        </a>
+				        </li>
+				        <li>
+					        <a href="{$base_url}/index.php?case=template&act=note&admin_dir=admin&site=default">模板结构标注
+					        </a>
+				        </li>
+				        <li>
+					        <a href="{$base_url}/index.php?case=template&act=edit&admin_dir=admin&site=default">查看模板源码
+					        </a>
+				        </li>
+				        <li>
+					        <a href="{$base_url}/index.php?case=template&act=downlist&admin_dir=admin&site=default">更多模板
+					        </a>
+				        </li>
+				       
+				        <li>
+					        <a href="{$base_url}/index.php?case=table&act=list&table=templatetag&tagfrom=content&admin_dir=admin&site=default">
+					        内容标签
+					        </a>
+				        </li>
+				        <li>
+					        <a href="{$base_url}/index.php?case=table&act=list&table=templatetag&tagfrom=category&admin_dir=admin&site=default">
+					        栏目标签
+					        </a>
+				        </li>
+				        <li>
+					        <a href="{$base_url}/index.php?case=table&act=list&table=templatetag&tagfrom=define&admin_dir=admin&site=default">
+					        自定义标签
+					        </a>
+				        </li>
+				        <li>
+					        <a href="{$base_url}/index.php?case=table&act=list&table=templatetagwap&tagfrom=content&admin_dir=admin&site=default">
+					        手机内容标签
+					        </a>
+				        </li>
+				        <li>
+					        <a href="{$base_url}/index.php?case=table&act=list&table=templatetagwap&tagfrom=category&admin_dir=admin&site=default">
+					        手机栏目标签
+					        </a>
+				        </li>
+				        <li>
+					        <a href="{$base_url}/index.php?case=table&act=list&table=templatetagwap&tagfrom=define&admin_dir=admin&site=default">
+					        手机自定义标签
+					        </a>
+				        </li>
+				        
+			            <li>
+				            <a href="{$base_url}/index.php?case=table&act=list&table=guestbook&admin_dir=admin&site=default">
+				            留言管理
+				            </a>
+			            </li>
+			            <li>
+				            <a href="{$base_url}/index.php?case=table&act=list&table=comment&admin_dir=admin&site=default">评论管理
+				            </a>
+			            </li>
+			            <li>
+				            <a href="{$base_url}/index.php?case=table&act=list&table=ballot&admin_dir=admin&site=default">投票管理
+				            </a>
+			            </li>
+			            <li>
+				            <a href="{$base_url}/index.php?case=database&act=baker&admin_dir=admin&site=default">数据管理
+				            </a>
+			            </li>
+			            <li>
+				            <a href="{$base_url}/index.php?case=filecheck&act=filecheck&action=file_check&admin_dir=admin&site=default">
+				            安全防护
+				            </a>
+			            </li>
+			            <li>
+					        <a href="{$base_url}/index.php?case=field&act=list&table=archive&admin_dir=admin&site=default">内容字段
+					        </a>
+				        </li>
+				        <li>
+					        <a href="{$base_url}/index.php?case=field&act=list&table=user&admin_dir=admin&site=default">用户字段
+					        </a>
+				        </li>
+				        <li>
+					        <a href="{$base_url}/index.php?case=form&act=listform&admin_dir=admin&site=default">管理表单
+					        </a>
+				        </li>
+				        <li>
+					        <a class="active-menu waves-effect waves-dark" href="#">
+								<span class="glyphicon glyphicon-edit"></span> 
+							联系我们
+							</a>
+						</li>
+						 <li>
+	                        <a href="{$base_url}/index.php?case=table&act=list&table=category&admin_dir=admin&site=default">
 	                        栏目管理
 	                        </a>
                         </li>
                         <li>
-	                        <a href="/index.php?case=table&act=list&table=type&admin_dir=admin&site=default">
+	                        <a href="{$base_url}/index.php?case=table&act=list&table=type&admin_dir=admin&site=default">
 	                        分类管理
 	                        </a>
                         </li>
                         <li>
-	                        <a href="/index.php?case=table&act=list&table=special&admin_dir=admin&site=default">
+	                        <a href="{$base_url}/index.php?case=table&act=list&table=special&admin_dir=admin&site=default">
 	                        专题管理
 	                        </a>
                         </li>
                         <li>
-	                        <a href="/index.php?case=table&act=list&table=archive&admin_dir=admin&site=default">
+	                        <a href="{$base_url}/index.php?case=table&act=list&table=archive&admin_dir=admin&site=default">
 	                        内容管理
 	                        </a>
                         </li>
                         <li>
-	                        <a href="/index.php?case=table&act=htmlrule&table=category&admin_dir=admin&site=default">
+	                        <a href="{$base_url}/index.php?case=table&act=htmlrule&table=category&admin_dir=admin&site=default">
 	                        URL规则
 	                        </a>
                         </li>
                         <li>
-	                        <a href="/index.php?case=table&act=setting&table=archive&admin_dir=admin&site=default">
+	                        <a href="{$base_url}/index.php?case=table&act=setting&table=archive&admin_dir=admin&site=default">
 	                        推荐位
 	                        </a>
                         </li>
                         <li>
-	                        <a href="/index.php?case=index&act=hotsearch&admin_dir=admin&site=default">
+	                        <a href="{$base_url}/index.php?case=index&act=hotsearch&admin_dir=admin&site=default">
 	                        热搜关键词
 	                        </a>
                         </li>
                         <li>
-	                        <a href="/index.php?case=image&act=listdir&admin_dir=admin&site=default">
+	                        <a href="{$base_url}/index.php?case=image&act=listdir&admin_dir=admin&site=default">
 	                        图片库
 	                        </a>
                         </li>
                         <li>
-	                        <a href="/index.php?case=table&act=list&table=tag&admin_dir=admin&site=default">
+	                        <a href="{$base_url}/index.php?case=table&act=list&table=tag&admin_dir=admin&site=default">
 	                        标签管理
 	                        </a>
                         </li>
-                    </ul>
-                </li>
-				<li>
-				<a class="active-menu waves-effect waves-dark" href="#">
-					<span class="glyphicon glyphicon-cog"></span> 
-				新闻资讯
-				</a>
-                <ul class="nav nav_2 nav-second-level">
-                    <li>
-	                    <a href="/index.php?case=table&act=list&table=user&admin_dir=admin&site=default">
-	                    用户管理
-	                    </a>
-	                </li>
-                    <li>
-	                    <a href="/index.php?case=table&act=list&table=usergroup&admin_dir=admin&site=default">
-	                    用户组管理
-	                    </a>
-                    </li>
-                    <li>
-	                    <a href="/index.php?case=ologin&act=list&table=ologin&admin_dir=admin&site=default">
-	                    登录扩展
-	                    </a>
-                    </li>
-                    <li>
-	                    <a href="/index.php?case=invite&act=list&admin_dir=admin&site=default">邀请码
-	                    </a>
-                    </li>
-                </ul>
-            </li>
-			<li>
-			<a class="active-menu waves-effect waves-dark" href="#">
-				<span class="glyphicon glyphicon-shopping-cart"></span> 
-			产品中心
-			</a>
-            <ul class="nav nav_3 nav-second-level">
-                <li>
-	                <a href="/index.php?case=table&act=list&table=orders&admin_dir=admin&site=default">
-	                订单列表
-	                </a>
-                </li>
-                <li>
-	                <a href="/index.php?case=pay&act=list&table=pay&admin_dir=admin&site=default">支付配置
-	                </a>
-                </li>
-                <li>
-	                <a href="/index.php?case=logistics&act=list&table=logistics&admin_dir=admin&site=default">
-	                配货配置
-	                </a>
-                </li>
+			        </ul>
+		    	</li>
             </ul>
-       	</li>
-		<li>
-			<a class="active-menu waves-effect waves-dark" href="#">
-				<span class="glyphicon glyphicon-th-list"></span> 
-			解决方案
-			</a>
-	        <ul class="nav nav_4 nav-second-level">
-	            <li>
-		            <a href="/index.php?case=table&act=list&table=announcement&admin_dir=admin&site=default">
-		            公告管理
-		            </a>
-	            </li>
-	            <li>
-		            <a href="/index.php?case=table&act=list&table=guestbook&admin_dir=admin&site=default">
-		            留言管理
-		            </a>
-	            </li>
-	            <li>
-		            <a href="/index.php?case=table&act=list&table=comment&admin_dir=admin&site=default">评论管理
-		            </a>
-	            </li>
-	            <li>
-		            <a href="/index.php?case=table&act=list&table=ballot&admin_dir=admin&site=default">投票管理
-		            </a>
-	            </li>
-	            <li>
-		            <a href="/index.php?case=database&act=baker&admin_dir=admin&site=default">数据管理
-		            </a>
-	            </li>
-	            <li>
-		            <a href="/index.php?case=filecheck&act=filecheck&action=file_check&admin_dir=admin&site=default">
-		            安全防护
-		            </a>
-	            </li>
-	        </ul>
-    	</li>
-		<li>
-		<a class="active-menu waves-effect waves-dark" href="#">
-			<span class="glyphicon glyphicon-th"></span> 
-			服务支持
-		</a>
-    	<ul class="nav nav_5 nav-second-level">
-        <li>
-	        <a href="/index.php?case=config&act=system&set=template&admin_dir=admin&site=default">选择模板
-	        </a>
-        </li>
-        <li>
-	        <a href="/index.php?case=template&act=note&admin_dir=admin&site=default">模板结构标注
-	        </a>
-        </li>
-        <li>
-	        <a href="/index.php?case=template&act=edit&admin_dir=admin&site=default">查看模板源码
-	        </a>
-        </li>
-        <li>
-	        <a href="/index.php?case=template&act=downlist&admin_dir=admin&site=default">更多模板
-	        </a>
-        </li>
-        <li>
-        	<a href="/index.php?case=config&act=system&set=slide&admin_dir=admin&site=default">幻灯
-        	</a>
-        </li>
-        <li>
-	        <a href="/index.php?case=table&act=list&table=templatetag&tagfrom=content&admin_dir=admin&site=default">
-	        内容标签
-	        </a>
-        </li>
-        <li>
-	        <a href="/index.php?case=table&act=list&table=templatetag&tagfrom=category&admin_dir=admin&site=default">
-	        栏目标签
-	        </a>
-        </li>
-        <li>
-	        <a href="/index.php?case=table&act=list&table=templatetag&tagfrom=define&admin_dir=admin&site=default">
-	        自定义标签
-	        </a>
-        </li>
-        <li>
-	        <a href="/index.php?case=table&act=list&table=templatetagwap&tagfrom=content&admin_dir=admin&site=default">
-	        手机内容标签
-	        </a>
-        </li>
-        <li>
-	        <a href="/index.php?case=table&act=list&table=templatetagwap&tagfrom=category&admin_dir=admin&site=default">
-	        手机栏目标签
-	        </a>
-        </li>
-        <li>
-	        <a href="/index.php?case=table&act=list&table=templatetagwap&tagfrom=define&admin_dir=admin&site=default">
-	        手机自定义标签
-	        </a>
-        </li>
-		</ul>
-		</li>
-		<li>
-		<a class="active-menu waves-effect waves-dark" href="#">
-			<span class="glyphicon glyphicon-signal"></span> 
-		下载中心
-		</a>
-        <ul class="nav nav_6 nav-second-level">
-            <li>
-	            <a href="/index.php?case=weixin&act=list&admin_dir=admin&site=default">公众号管理
-	            </a>
-            </li>
-            <li>
-	            <a href="/index.php?case=stats&act=list&table=stats&admin_dir=admin&site=default">
-	            蜘蛛统计
-	            </a>
-            </li>
-            <li>
-	            <a href="/index.php?case=table&act=list&table=linkword&admin_dir=admin&site=default">
-	            内链管理
-	            </a>
-            </li>
-            <li>
-	            <a href="/index.php?case=table&act=list&table=friendlink&admin_dir=admin&site=default">
-	            友链管理
-	            </a>
-            </li>
-            <li>
-	            <a href="/index.php?case=table&act=send&table=user&admin_dir=admin&site=default">发送邮件
-	            </a>
-            </li>
-        </ul>
-    </li>
-	<li>
-	<a class="active-menu waves-effect waves-dark" href="#">
-	<span class="glyphicon glyphicon-edit"></span> 
-	关于我们
-	</a>
-    <ul class="nav nav_7 nav-second-level">
-        <li>
-	        <a href="/index.php?case=field&act=list&table=archive&admin_dir=admin&site=default">内容字段
-	        </a>
-        </li>
-        <li>
-	        <a href="/index.php?case=field&act=list&table=user&admin_dir=admin&site=default">用户字段
-	        </a>
-        </li>
-        <li>
-	        <a href="/index.php?case=form&act=listform&admin_dir=admin&site=default">管理表单
-	        </a>
-        </li>
-        <li>
-	        <a class="active-menu waves-effect waves-dark" href="#">
-				<span class="glyphicon glyphicon-edit"></span> 
-				联系我们
-			</a>
-	        <ul class="nav nav_7 nav-second-level">
-	            <li>
-		            <a href="/index.php?case=field&act=list&table=archive&admin_dir=admin&site=default">内容字段
-		            </a>
-	            </li>
-	            <li>
-		            <a href="/index.php?case=field&act=list&table=user&admin_dir=admin&site=default">用户字段
-		            </a>
-	            </li>
-	            <li>
-		            <a href="/index.php?case=form&act=listform&admin_dir=admin&site=default">管理表单
-		            </a>
-	            </li>
-	        </ul>
-    </li>
-</ul>
-</div>
-</div>
+		</div>
+	</div>
 
 <script>$(function(){
     $('.nav_<?php echo $curr_i;?>').addClass('in');
     });</script>
-<!-- 右侧 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- 右侧 -->
 <div id="page-wrapper" class="main">
 	<div class="container-fluid">
 
