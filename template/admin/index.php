@@ -172,11 +172,6 @@
 				        	<a href="{$base_url}/index.php?case=config&act=system&set=slide&admin_dir=admin&site=default">幻灯片
 				        	</a>
 				        </li>
-				        <li>
-				            <a href="{$base_url}/index.php?case=table&act=list&table=announcement&admin_dir=admin&site=default">
-				            公告发布
-				            </a>
-			            </li>
 		            </ul>
 	            </li>
 				<li>
