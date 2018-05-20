@@ -35,44 +35,19 @@ var base_url = '{$base_url}';
 </div>
 <div class="clearfix"></div>
 
-<div class="row">
-<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 text-right">专题副标题</div>
-<div class="col-xs-8 col-sm-7 col-md-7 col-lg-5 text-left">
-{form::getform('subtitle',$form,$field,$data)}
-<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="辅助性专题副标题！"></span>
-</div>
-</div>
-<div class="clearfix blank20"></div>
 
+</div>
 <div class="row">
-<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 text-right">是否生成</div>
-<div class="col-xs-8 col-sm-7 col-md-7 col-lg-5 text-left">
-{form::getform('ishtml',$form,$field,$data)}
-<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="选择专题是否生成HTML静态页面！"></span>
-</div>
-</div>
-<div class="clearfix blank20"></div>
-
-<div class="row">
-<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 text-right">模板</div>
-<div class="col-xs-8 col-sm-7 col-md-7 col-lg-5 text-left">
-{form::getform('template',$form,$field,$data)}
-<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="选择专题模板样式！"></span>
-</div>
-</div>
-<div class="clearfix"></div>
-
-<div class="row">
-<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 text-right">横幅</div>
+<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 text-right">图片</div>
 <div class="col-xs-8 col-sm-7 col-md-7 col-lg-5 text-left">
 {form::getform('banner',$form,$field,$data)}
-<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="专题横幅图片！"></span>
+<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="图片"></span>
 </div>
 </div>
 <div class="clearfix"></div>
 
 <div class="row">
-<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 text-right">描述</div>
+<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 text-right">内容</div>
 <div class="col-xs-8 col-sm-8 col-md-9 col-lg-10 text-left">
 {form::getform('description',$form,$field,$data)}
 

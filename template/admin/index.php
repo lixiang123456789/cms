@@ -181,17 +181,17 @@
  					</a>
                     <ul class="nav nav_1 nav-second-level">
                         <li>
-							<a href="{$base_url}?case=table&act=list&table=category&admin_dir=admin&site=default">
+							<a href="{$base_url}?case=table&act=edit&table=archive&id=1&deletestate=&admin_dir=admin&site=default">
 	                        公司简介
 	                        </a>
                         </li>
                         <li>
-	                        <a href="{$base_url}?case=table&act=list&table=type&admin_dir=admin&site=default">
+	                        <a href="{$base_url}?case=table&act=list&table=special&admin_dir=admin&site=default">
 	                        企业文化
 	                        </a>
                         </li>
                         <li>
-	                        <a href="{$base_url}?case=table&act=list&table=special&admin_dir=admin&site=default">
+	                        <a href="{$base_url}?case=table&act=edit&table=archive&id=2&deletestate=&admin_dir=admin&site=default">
 	                        品牌诠释
 	                        </a>
                         </li>
@@ -204,7 +204,7 @@
 				</a>
                 <ul class="nav nav_2 nav-second-level">
                     <li>
-	                    <a href="{$base_url}?case=table&act=list&table=user&admin_dir=admin&site=default">
+	                    <a href="{$base_url}?case=table&act=list&table=archive&admin_dir=admin&site=default">
 	                    公司新闻
 	                    </a>
 	                </li>

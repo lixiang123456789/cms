@@ -1,27 +1,9 @@
 
 <div class="row archive-list">
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-     <form name="searchform" id="searchform"  action="<?php echo uri();?>" method="post">
-
-            栏目&nbsp;
-            <?php echo form::select('search_catid',get('search_catid')?get('search_catid'):0,category::option()); ?><div class="linebreak"><div class="blank10"></div></div>
-            分类&nbsp;
-            <?php echo form::select('search_typeid',get('search_typeid')?get('search_typeid'):0,type::option()); ?><div class="linebreak"><div class="blank10"></div></div>
-			专题&nbsp;
-            <?php echo form::select('search_spid',get('search_spid')?get('search_spid'):0,special::option()); ?>
-<div class="blank5"></div>
-            标题
-            <input type="text" class="form-control" name="search_title" id="search_title" value="" />
-
-            <input type="submit" value="搜索" name="submit"  onclick="this.form.action='{url::modify('table/'.get('table').'/type/search')}'" class="btn btn-steeblue search-btn" />
-        </form>
-		</div>
 <div class="linebreak"><div class="blank10"></div></div>
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right">
+<div style="margin-left:-38%" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right">
 
-<input type="button" value="添加内容" onClick="javascript:location.href='{$base_url}/index.php?case=table&act=add&table=archive&admin_dir={get('admin_dir')}'"  class="btn btn-primary" />
-<input type="button" value="审核内容" onclick="javascript:window.location.href='{url::create('table/list/table/archive/needcheck/1')}'"  class="btn btn-steeblue" />
-<input type="button" value="回收站" onclick="javascript:window.location.href='{url::modify("table/".get('table')."/deletestate/1/page/1")}'"  class="btn btn-navy" />
+<input type="button" value="发布公司新闻" onClick="javascript:location.href='{$base_url}/index.php?case=table&act=add&table=archive&admin_dir={get('admin_dir')}'"  class="btn btn-primary" />
 </div>
 
 </div>
@@ -37,8 +19,8 @@
 <tr class="th">
 <th class="s_out"><input title="点击可全选本页的所有项目"  onclick="CheckAll(this.form)" type="checkbox" name="chkall" class="checkbox" /> </th>
                 <th class="sort">排序</th>
-                <th class="sort"><!--aid-->编号</th>
-                <th class="htmldir"><!--catid-->栏目</th>
+                <th class="sort"><!--aid-->ID</th>
+                
                 <th class="catname"><!--title-->标题</th>
                 <th class="htmldir"><!--attr1-->推荐位</th>
                 <!-- <th>作者</th> -->
@@ -59,7 +41,6 @@
                 <td class="sort" align="center" class="table_input_c">{form::input("listorder[$d[$primary_key]]",$d['listorder'],'class="input_c"')}</td>
 
                 <td class="sort" align="center">{cut($d['aid'])}</td>
-                <td class="htmldir" align="center" style="width:100px;"><span class="hotspot" onmouseover="tooltip.show('查看内容所属栏目');" onmouseout="tooltip.hide();"><a href="<?php echo url("archive/list/catid/".$d['catid'],false);?>" target="_blank">{catname($d['catid'])}</a></span></td>
                 <td align="left" class="catname">{cut($d['title'])}</td>
                 <td class="htmldir" align="center">{if !empty($d['attr1'])}<span onmouseover="tooltip.show('{attr1($d['attr1'])}');" onmouseout="tooltip.hide();">{helper::yes($d['checked'])}</span>{/if}</td>
                 <!-- <td align="center">{cut($d['username'])}</td> -->
