@@ -137,7 +137,7 @@
 	            </li>
 	            <li>
 					<a class="active-menu waves-effect waves-dark" href="#">
-						<span class="glyphicon glyphicon-cog"></span> 
+						<span class="glyphicon glyphicon-user"></span> 
 					用户管理 
 					</a>
 	                <ul class="nav nav_11 nav-second-level">
@@ -164,7 +164,7 @@
 	            </li>
 	            <li>
 					<a class="active-menu waves-effect waves-dark" href="#">
-						<span class="glyphicon glyphicon-th-list"></span> 
+						<span class="glyphicon glyphicon-home"></span> 
 					网站首页 
 					</a>
 	                <ul class="nav nav_11 nav-second-level">
@@ -199,7 +199,7 @@
                 </li>
 				<li>
 				<a class="active-menu waves-effect waves-dark" href="#">
-					<span class="glyphicon glyphicon-cog"></span> 
+					<span class="glyphicon glyphicon-info-sign"></span> 
 				新闻资讯
 				</a>
                 <ul class="nav nav_2 nav-second-level">
@@ -217,7 +217,7 @@
             </li>
 			<li>
 			<a class="active-menu waves-effect waves-dark" href="#">
-				<span class="glyphicon glyphicon-shopping-cart"></span> 
+				<span class="glyphicon glyphicon-send"></span> 
 			产品中心
 			</a>
             <ul class="nav nav_3 nav-second-level">
@@ -239,7 +239,7 @@
        	</li>
 		<li>
 			<a class="active-menu waves-effect waves-dark" href="#">
-				<span class="glyphicon glyphicon-th-list"></span> 
+				<span class="glyphicon glyphicon-pencil"></span> 
 			解决方案
 			</a>
 	        <ul class="nav nav_4 nav-second-level">
